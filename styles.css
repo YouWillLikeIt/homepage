@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', 'SimSun', serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.resume-paper {
+    width: 260mm;
+    min-height: 297mm;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20mm;
+    position: relative;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.contact-info {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.recruitment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 15px;
+    border-left: 3px solid #ccc;
+    font-size: 14px;
+}
+
+.recruitment p {
+    margin-bottom: 8px;
+}
+
+.profile-image {
+    width: 1%;
+    height: 1%;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 14px;
+}
+
+.introduction {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 40px; 
+}
+
+img {
+    display: block;
+    width: 15%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 100px;
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+.spacing {
+    margin-top: 10px;
+}
+
+/* publication */
+.publication-list {
+    list-style-type: square;
+}
+
+.publication-item {
+    margin-bottom: 8px;
+}
+
+.content {
+    display: inline;
+    overflow: hidden;
+}
+
+.publication-authors {
+    display: inline;
+    margin-bottom: 3px;
+}
+
+.publication-title {
+    font-style: italic;
+    display: inline;
+    margin-bottom: 3px;
+}
+
+.publication-venue {
+    display: inline;
+    margin-bottom: 3px;
+}
+
+.publication-level {
+    font-weight: bold;
+    display: inline;
+    margin-bottom: 3px;
+}
+
+.code-link {
+    color: #0000EE;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: normal;
+    display: inline;
+    margin-top: 3px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    
+    .resume-paper {
+        box-shadow: none;
+        padding: 20mm;
+        width: 100%;
+        min-height: auto;
+    }
+}
